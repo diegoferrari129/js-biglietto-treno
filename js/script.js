@@ -7,11 +7,16 @@ const price = distance_km * 0.21;
 
 // va applicato uno sconto del 20% per i minorenni
 // va applicato uno sconto del 40% per gli over 65
-let discount = 0
+let discount = 0;
 
 if (age < 18) {
-    discount = 20%
+    discount = 20
+} 
+else if (age > 65) {
+    discount = 40
 }
 
-else if (age > 65)
-    discount = 40%
+
+
+// output del prezzo massimo 2 decimali
+document.getElementById('template_literal').innerText = price;
