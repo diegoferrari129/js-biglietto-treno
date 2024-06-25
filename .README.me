@@ -1,0 +1,31 @@
+// TRACCIA ES
+Il programma dovrà chiedere all'utente il numero di chilometri che vuole percorrere e l'età del passeggero.
+Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
+il prezzo del biglietto è definito in base ai km (0.21 € al km)
+va applicato uno sconto del 20% per i minorenni
+va applicato uno sconto del 40% per gli over 65.
+L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
+
+Ricordatevi di fare il file README.md in cui scomponete il problema in sotto problemi
+Numero minimo di push: 6
+
+
+// SCOMPOSIZIONE ES
+
+// chiedere all'utente il numero di chilometri che vuole percorrere e l'età del passeggero
+- DICHIARO una variabile per i chilometri da percorrere con =VALORE aquisito da una prompt
+- DICHIARO una variabile per l'età del passeggero con =VALORE aquisito da un'altra prompt
+
+// il prezzo del biglietto è definito in base ai km (0.21 € al km)
+- DICHIARO una variabile per il prezzo calcolato in base ai chilometri con =VALORE aquisito dall'operazione (valore della variabile per il numero di chilometri *moltiplicato per 0.21 €)
+
+<-- va applicato uno sconto del 20% per i minorenni
+    va applicato uno sconto del 40% per gli over 65. -->
+- DICHIARO una variabile per lo sconto
+- ?SE età < MINORE di 18anni
+  - la variabile dello sconto =VALORE 20%
+  - :ALTRIMENTI ?SE età > MAGGIORE di 65anni
+  - la variabile dello sconto =VALORE 40%
+
+// output del prezzo massimo 2 decimali
+- DICHIARO una variabile per il prezzo finale con =VALORE aquisito dall'operazione ( variabile per il prezzo calcolato in base ai chilometri -meno variabile per lo sconto )
