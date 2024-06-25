@@ -16,7 +16,8 @@ else if (age > 65) {
     discount = 40
 }
 
-
+const total_price = price - discount;
 
 // output del prezzo massimo 2 decimali
-document.getElementById('template_literal').innerText = price;
+
+document.getElementById('template_literal').innerText = price.toFixed(2);
