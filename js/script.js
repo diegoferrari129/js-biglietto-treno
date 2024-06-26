@@ -10,14 +10,14 @@ const price = distance_km * 0.21;
 let discount = 0;
 
 if (age < 18) {
-    discount = 20
+    discount = price * 0.2
 } 
 else if (age > 65) {
-    discount = 40
+    discount = price * 0.4
 }
 
 const total_price = price - discount;
 
 // output del prezzo massimo 2 decimali
 
-document.getElementById('template_literal').innerText = price.toFixed(2);
+document.getElementById('template_literal').innerText = total_price.toFixed(2);
